@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer for work and leisure</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+    <h1 class="headerUpNew" id="headerUp"></h1>
+    </div>
+
+    <div id="container-countdown">
+        <p id="countdown"></p>
+    </div>
+
+    <div class="sectionTimer">
+
+    <button id="setTimer">Set time</button>
+    <select id="timerMinute">
+        <option value="35">35 minutes</option>
+        <option value="25">25 minutes</option>
+        <option value="20">20 minutes</option>
+        <option value="30" selected>30 minutes</option>
+        <option value="00">00 minutes</option>
+    </select>
+    </div>
+
+    <div class="sectionTimer">
+    <button id="btn">Start timer</button>
+    </div>
+
+    <div class="header leisure">
+        <h1 id="headerBottom"></h1>
+        </div>   
+        
+        <div id="containerLeisureTimer">
+            <button id="btn"><a href="wawes/wawes.html">WAWES</a></button>
+            <button id="btn"><a href="rain/rain.html">RAIN</a></button>
+            <button id="btn"><a href="nature/nature.html">NATURE</a></button>
+        </div>
+
+    <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline class="myVideo" id="myVideoWork">
+        <source src="coverr-a-guy-working-on-a-pc-18-1080p.mp4" type="video/mp4">
+    </video>
+
+    <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline id="myVideoLeisure">
+        <source src="coverr-a-guy-wiping-dust-off-of-a-christmas-frame-3343-1080p.mp4" type="video/mp4">
+    </video>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
